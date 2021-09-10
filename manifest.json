@@ -1,0 +1,16 @@
+{
+    "name": "| Project N",
+    "short_name": "脱出",
+    "theme_color": "#00acee",
+    "background_color": "#00acee",
+    "display": "standalone",
+    "start_url": "./index.html",
+    "icons": [
+      {
+        "src": "./assets/icon/icon-310x310.png",
+        "sizes": "310x310",
+        "type": "image/png"
+      }
+    ]
+  }
+  
