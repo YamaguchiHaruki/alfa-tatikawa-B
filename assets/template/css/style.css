@@ -435,9 +435,9 @@ button {
 
 .answer {
   font-size: 18px;
-  margin-bottom: 20px;
   line-height: 80px;
   word-spacing: 20px;
+  margin:20px;
 }
 
 .err-message {
@@ -510,3 +510,11 @@ button {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
+
+.background_white{
+  background-color:white;
+}
+
+.text-white{
+  color:white;
+}
