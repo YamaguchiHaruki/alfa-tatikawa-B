@@ -18,12 +18,12 @@ const app = Vue.createApp({
       */
       correctAnswer: {
         stage1: {
-          q1: 'あああ',
+          q1: 'りあるだっしゅつ',
         },
         stage2: {
-          q1: 'いいい',
-          // q2: 'えええ',
-          // q3: 'おおお'
+          q1: 'きのぼう',
+          q2: 'ぬの',
+          q3: 'けいと'
         },
         stage3: {
           q1: 'ううう',
@@ -71,14 +71,14 @@ const app = Vue.createApp({
     /* 「送信」ボタンをクリックした場合の動作です。 */
     answerInput(event, stage, number, final) {
       /* answerをtrueまたはfalseにします。 */
-      this.answer[stage][number-1] = event;
+      this.answer[stage][number - 1] = event;
       /* STAGEのすべての問題がtrueか調べてclearの値を変更します。*/
       const result = this.answer[stage].every((element) => {
         return element;
       });
       this.clear[stage] = result;
       /* 最終ステージの入力を判定します。 */
-      if ( this.clear[stage] === true && final === 'final' ) {
+      if (this.clear[stage] === true && final === 'final') {
         window.location.href = 'final.html';
       }
     },
@@ -99,7 +99,7 @@ app.component('answer-input', {
   data: function () {
     return {
       /* 送信ボタン上下に表示されるメッセージ */
-      okMessage: '正解！',
+      okMessage: '正解 🎉🎉🎉',
       ngMessage: 'そのキーワードは違うようだぞ！？',
       message: '',
       inputAnswer: '',
@@ -116,11 +116,11 @@ app.component('answer-input', {
     </div>`,
   methods: {
     judgement(answer) {
-      if(answer === this.correct) { // 入力値が解答と一致する場合
+      if (answer === this.correct) { // 入力値が解答と一致する場合
         this.message = this.okMessage;
         this.$emit('answerInput', true);
       } else { // 一致しない場合
-        this.message = this.ngMessage; 
+        this.message = this.ngMessage;
         this.$emit('answerInput', false);
       }
     },
@@ -128,3 +128,5 @@ app.component('answer-input', {
 })
 
 app.mount('#stage')
+
+twemoji.parse(document.body);
