@@ -20,7 +20,7 @@ const app = Vue.createApp({
         stage1: {
           q1: '木の棒',
           q2: '布',
-          q3: '毛糸'
+          q3: '毛糸',
         },
         stage2: {
           q1: '🍀🌈🎵',
@@ -132,5 +132,3 @@ app.component('answer-input', {
 })
 
 app.mount('#stage')
-
-twemoji.parse(document.body);
