@@ -1,6 +1,6 @@
 # beta-tatikawa-B
 ## Bootstrap
-Copyright (c) 2011-2021 Twitter, Inc.
+Copyright (c) 2011-2021 Twitter, Inc.   
 Copyright (c) 2011-2021 The Bootstrap Authors Licensed under MIT [https://github.com/twbs/bootstrap/blob/main/LICENSE](https://github.com/twbs/bootstrap/blob/main/LICENSE)
 
 ## Twemoji
